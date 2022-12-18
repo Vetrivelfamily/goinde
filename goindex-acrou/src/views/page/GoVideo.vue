@@ -155,19 +155,13 @@ export default {
         ratio: "16:9",
         controls: [
           "play-large",
-          "restart",
           "play",
           "progress",
           "current-time",
           "duration",
-          "mute",
-          "volume",
-          "captions",
-          "settings",
-          "pip",
-          "airplay",
-          "download",
-          "fullscreen",
+        "settings",
+        "download",
+          
         ],
         ...options,
         captions: { active: true, language: "default", ...options.captions },
@@ -186,26 +180,7 @@ export default {
       return [
        
 
-        {
-          name: "MXPlayer(Free)",
-          icon: this.$cdnpath("images/player/mxplayer.png"),
-          scheme:
-            "intent:" +
-            this.videoUrl +
-            "#Intent;package=com.mxtech.videoplayer.ad;S.title=" +
-            this.title +
-            ";end",
-        },
-        {
-          name: "MXPlayer(Pro)",
-          icon: this.$cdnpath("images/player/mxplayer.png"),
-          scheme:
-            "intent:" +
-            this.videoUrl +
-            "#Intent;package=com.mxtech.videoplayer.pro;S.title=" +
-            this.title +
-            ";end",
-        },
+        
       ];
     },
     getThunder() {
